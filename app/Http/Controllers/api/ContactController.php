@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\Api;
 
 use App\Contact;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\Controller;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -30,7 +30,13 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $details = $request->only(['first_name',"last_name","email","birth_date","phone","role","contact_method"]);
+
+       $user = $this->authUser();
+
+        $contact = $user->contacts()->create($details);
+
+        return $contact;
     }
 
     /**
@@ -65,5 +71,13 @@ class ContactController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function self(  )
+    {
+
+        $user = $this->authUser();
+
+        return $user->contacts;
     }
 }

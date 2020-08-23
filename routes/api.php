@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,4 +19,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/contacts', 'api\ContactController@index');
+Route::post('/login', 'Api\Auth\LoginController@login');
+
+Route::get('/contacts/self', 'Api\ContactController@self');
+
+Route::post('/contacts/create', 'Api\ContactController@store');
+
+Route::get('/refresh', 'Api\Auth\LoginController@refresh');
+
+Route::get('/contacts', 'Api\ContactController@index');

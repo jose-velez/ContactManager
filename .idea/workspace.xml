@@ -115,6 +115,11 @@
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gSpV6IVVMl4rvRYsmeeUO3RqFV" />
@@ -131,6 +136,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -147,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598117868631</updated>
       <workItem from="1598117869742" duration="978000" />
-      <workItem from="1598153570017" duration="4166000" />
+      <workItem from="1598153570017" duration="8760000" />
     </task>
     <servers />
   </component>
@@ -155,9 +161,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup" timestamp="1598156984645">
+    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup" timestamp="1598205985087">
       <screen x="0" y="23" width="1792" height="1047" />
     </state>
-    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup/0.23.1792.1047@0.23.1792.1047" timestamp="1598156984645" />
+    <state x="561" y="255" width="670" height="676" key="search.everywhere.popup/0.23.1792.1047@0.23.1792.1047" timestamp="1598205985087" />
   </component>
 </project>
